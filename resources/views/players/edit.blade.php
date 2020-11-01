@@ -35,7 +35,7 @@
             </div>
 
             <div class="w-1/2">
-                <label class="mb-1 block" for="team">
+                <label class="text-lg mb-1 block" for="team">
                     Team
                 </label>
 
@@ -55,7 +55,7 @@
 
         <div class="flex flex-wrap">
             <div class="w-1/2" >
-                <label class="mb-1 block" for="position">
+                <label class="text-lg mb-1 block" for="position">
                     Position
                 </label>
 
