@@ -14,6 +14,8 @@ Auth::routes();
 
 Route::middleware ('auth') -> group (function () {
 
+    Route::get('/home', [PlayersController::class, 'index']);
+
     Route::get('/', [PlayersController::class, 'index']);
 
     Route::get('/players/{players}', [PlayersController::class, 'show']);

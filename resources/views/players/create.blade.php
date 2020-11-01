@@ -2,7 +2,7 @@
 
 @section ('header')
 
-    <div class="text-4xl mb-8">
+    <div class="mt-3  text-4xl mb-8">
         <h1>Add a Player</h1>
     </div>
 
@@ -32,9 +32,9 @@
             </div>
         </div>
 
-        <div class="flex flex-wrap">
+        <div class="flex flex-col flex-wrap">
             <div class="w-1/2">
-                <label class="block" for="email">
+                <label class="block" for="team">
                     Team Name
                 </label>
 
@@ -51,7 +51,7 @@
             </div>
 
             <div class="w-1/2">
-                <label class="block" for="phone">
+                <label class="block" for="position">
                     Players Position
                 </label>
 
