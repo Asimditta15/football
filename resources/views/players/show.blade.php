@@ -8,27 +8,27 @@
 
 
 
-                <div class="flex flex-col break-words bg-white border border-2 rounded shadow-md px-5">
+                <div class="flex flex-col w-80 break-words bg-white border border-2 rounded shadow-md px-5">
 
-                    <h1 class="text-2xl font-bold my-10">
+                    <h1 class="text-3xl text-center font-bold my-10 mb-19">
                         Name: {{ $players -> name }}
                     </h1>
 
-                    <p class="mt-2 text-lg">
+                    <p class="mt-12 text-lg border border-blue-400 border-lg rounded py-2 px-2 ">
                         Team: {{$players -> team}}
                     </p>
 
-                    <p class="mt-2">
+                    <p class="mt-12 text-lg border border-blue-400 border-lg rounded py-2 px-2 ">
                         Position: {{ $players -> position}}
                     </p>
 
-                    <p class="mt-4">
+                    <p class="mt-12 transition-all duration-500 ease-in-out bg-none hover:bg-blue-400  border border-blue-300 rounded-md text-lg border border-blue-400 border-lg rounded py-2 px-2 ">
                         <a href="{{ $players -> path.('/edit')}}"> Edit Players
 
                         </a>
                     </p>
 
-                    <form class="mt-4" method="post" action="{{ $players -> path }}">
+                    <form class="mt-12 transition-all duration-500 ease-in-out bg-none hover:bg-blue-400  border border-blue-300 rounded-md text-lg border border-blue-400 border-lg rounded py-2 px-2 " method="post" action="{{ $players -> path }}">
                         @method ('DELETE')
                         @csrf
                         <button type="submit">

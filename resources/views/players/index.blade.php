@@ -9,7 +9,7 @@
 @endsection
 
 @section('content')
-    <main class="sm:container sm:mx-auto sm:mt-10">
+    <main class="mt-10">
         <div class="grid gap-x-6 grid-cols-4">
 
             @foreach($players as $p)
