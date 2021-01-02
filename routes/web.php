@@ -27,3 +27,7 @@ Route::middleware ('auth') -> group (function () {
     Route::get('/players/{players}/edit', [PlayersController::class, 'edit']);
     Route::patch('/players/{players}', [PlayersController::class, 'update']);
 });
+
+Route::get('/comments', [    'uses' => 'App\Http\Controllers\CommentsController@index',
+    'as' => 'comments']
+);
